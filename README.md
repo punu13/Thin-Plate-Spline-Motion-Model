@@ -73,7 +73,14 @@ CUDA_VISIBLE_DEVICES=0 python run.py --mode train_avd --checkpoint '{checkpoint_
 ```
 Checkpoints, loss values, reconstruction results will be saved to `{checkpoint_folder}`.
 
-
+### Usage for windows
+```
+python demo.py --config config/vox-256.yaml --checkpoint checkpoints/vox.pth.tar --source_image assets/source.png --driving_video assets/driving.mp4 --result_video Test_Results.mp4
+```
+Or use this command for CPU processing
+```
+python demo.py --config config/vox-256.yaml --checkpoint checkpoints/vox.pth.tar --source_image assets/source.png --driving_video assets/driving.mp4 --result_video Test_Results.mp4 --cpu
+```
 
 ### Evaluation on video reconstruction
 
